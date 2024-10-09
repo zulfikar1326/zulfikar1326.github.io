@@ -4,34 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Service Electronik</title>
-
     <link rel="stylesheet" href="../dist/output.css">
+    <link rel="icon" href="../src/logoipsum.svg">
 </head>
 <body>
-    <!--SECTION-->
-    <div class="w-full bg-gray-800">
-        <h1 class="text-white text-center">Diskon Waktu Hari Jum'at dapat <span class="text-purple-500">potongan service 4%</span></h1>
-    </div>
-
     <!--NAVBAR-->
-    <div class="container flex flex-none mx-auto bg-blue-500 items-center justify-between py-5 drop-shadow-lg">
+    <div class="w-full z-20 fixed top-11 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div class="container flex flex-none mx-auto bg-blue-500 items-center justify-between py-5 drop-shadow-lg">
+            <div class="container py-1 px-2">
+                <img src="./logoipsum.svg" alt="foto Logo">
+            </div>
+            
+            <div>
+                <ul class="inline-flex">
+                    <li class="px-5 py-1 mx-2 bg-white text-black rounded-lg hover:bg-slate-300 "><a href="#servis">Service</a></li>
+                    <li class="px-5 py-1 mx-2 bg-white text-black rounded-lg hover:bg-slate-300 "><a href="#tentang">About</a></li>
+                </ul>
+            </div>
         
-        <div class="container py-1 px-2">
-            <img src="./logoipsum.svg" alt="foto Logo">
-        </div>
-        
-        <div>
-            <ul class="inline-flex">
-                <li class="px-5 py-1 mx-2 bg-white text-black rounded-lg hover:bg-slate-300 "><a href="#">Service</a></li>
-                <li class="px-5 py-1 mx-2 bg-white text-black rounded-lg hover:bg-slate-300 "><a href="#">About</a></li>
-            </ul>
-        </div>
+        </div>    
     </div>
 
     <!--HERO SECTION-->
-    <div class="container bg-slate-100 mt-5 h-96 grid place-items-center rounded-lg drop-shadow-lg">
+    <div class="container bg-slate-100 mt-32 h-96 grid place-items-center rounded-lg drop-shadow-lg">
         <div class="space-y-2">
-            <h1 class="text-black text-center items-center text-7xl font-bold ">Selamat Datang Pengujung Tercinta</h1>
+            <h1 class="text-black text-center items-center text-4xl font-bold lg:text-7xl md:text-5xl">Selamat Datang Pengujung Tercinta</h1>
             <div class="flex justify-center">
                 <p  class="text-slate-500 text-center font-light">Service elektronik dengan <span class="text-fuchsia-500">pengalaman lebih dari 10th</span></p>
             </div>
@@ -40,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="container divide-y-4 divide-black mb-15"></div>
+
     <div class="container flex flex-wrap gap-4 mt-44">
         <div class="bg-blue-600 text-center w-5/6 text-white p-5 mx-auto rounded-3xl drop-shadow-2xl text-base font-semibold hover:bg-blue-800">Terpercaya</div>
         <div class="bg-blue-600 text-center w-5/6 text-white p-5 mx-auto rounded-3xl drop-shadow-2xl text-base font-semibold hover:bg-blue-800">Tanggung Jawab</div>
@@ -49,7 +46,7 @@
     </div>
 
     <!-- LAYANAN KAMI  -->
-    <div class="container mx-auto px-4 py-12 mt-12">
+    <div id="servis" class="container mx-auto px-4 py-12 mt-12">
         <h1 class="text-3xl font-bold text-center mb-8">LAYANAN KAMI</h1>
       
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -111,6 +108,7 @@
         </div>
     </div>
     
+    <!--CONTACT-->
     <div class="container mx-auto mt-10">
         <h1 class="text-3xl font-bold text-center mb-8">KEUNGGULAN LAYANAN KAMI</h1>
         <article class="rounded-xl bg-white p-4 ring ring-indigo-50 sm:p-6 lg:p-8">
@@ -158,12 +156,12 @@
           </article>
     </div>
 
-
-    <div class="container flex justify-center mt-10">
+    <!--INFO DEV-->
+    <div id="tentang" class="container flex justify-center mt-10">
         <a href="#" class="group relative block bg-black w-full">
             <img
               alt=""
-              src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+              src="../icon/file.enc"
               class="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
             />
           
@@ -185,6 +183,7 @@
           </a>
     </div>
 
+    <!--FOOTER-->
       <div class="bg-slate-100 p-6 shadow-md mt-5 text-center border-2 border-blue-300 ">
         <h2 class="text-xl font-semibold mb-2">@meking177</h2>
         <p class="text-gray-600">Program semalam jadi dengan adanya surya</p>
